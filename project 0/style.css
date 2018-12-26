@@ -1,23 +1,28 @@
-#mainHeader{
-  color: #3399ff;
+.nav, .mapHeader, .secondaryHeader, #mainHeader {
   padding: 10px;
+}
+
+#mainHeader {
+  color: #3399ff;
   border-left: 5px solid red;
 }
 
-.secondaryHeader{
-  padding: 10px;
-}
-
-.mapHeader{
-  padding: 10px;
+.mapHeader {
   font-weight: bold;
 }
 
-.nav{
-  padding: 10px;
+.nav {
   width: 100px;
 }
 
-th, td{
+table th, table td {
   padding: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  #mainHeader {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

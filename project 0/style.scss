@@ -1,6 +1,39 @@
 
-$primaryColor: #eeffcc;
+$primaryColor: #3399ff;
 
-body {
-    background: $primaryColor;
+%padding{
+  padding:10px;
+}
+
+#mainHeader{
+  @extend %padding;
+  color: $primaryColor;
+  border-left: 5px solid red;
+}
+
+.secondaryHeader{
+  @extend %padding;
+}
+
+.mapHeader{
+  @extend %padding;
+  font-weight: bold;
+}
+
+.nav{
+  @extend %padding;
+  width: 100px;
+}
+
+table{
+  th, td{
+    padding: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  #mainHeader {
+    font-size: 1em;
+  }
 }
